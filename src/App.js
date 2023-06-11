@@ -29,11 +29,11 @@ function App() {
   }, []);
 
   return (
-    <div className="">
+    <div className="min-h-screen flex flex-col bg-gray-800">
       <div>
         <Navbar></Navbar>
       </div>
-      <div>
+      <div className="min-h-screen bg-gray-700">
         <div>
           <Filter
             filterData={filterData}
@@ -41,7 +41,8 @@ function App() {
             setCategory={setCategory}
           ></Filter>
         </div>
-        <div>
+        <div className="w-11/12 max-w-[1200px] 
+        mx-auto flex flex-wrap justify-center items-center min-h-[50vh]">
           {loading ? (
             <Loader />
           ) : (

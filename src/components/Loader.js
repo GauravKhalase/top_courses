@@ -17,7 +17,7 @@ const Loader = () => {
   innerCircleColor=""
   middleCircleColor=""
 />
-<p>Loading...</p>
+<p className='text-white'>Loading...</p>
     </div>
     
   )
